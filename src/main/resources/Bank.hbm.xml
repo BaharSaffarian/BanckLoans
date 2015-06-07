@@ -1,0 +1,20 @@
+<class name="Customer" table="customer">
+    <meta attribute="class-description">contains the real customer inf</meta>
+    <id name="id" column="id">
+        <generator class="native"></generator>
+    </id>
+    <joined-subclass name="RealCustomer" extends="Customer" table="real_customer">
+        <key column="customer_id"/>
+        <property name="firstName" type="string" column="first_name"></property>
+        <property name="lastName" type="string" column="last_name"></property>
+        <property name="fatherName" type="string" column="father_name"></property>
+        <property name="dateOfBirth" column="birth_date"></property>
+        <property name="nationalCode" type="string" column="national_code"></property>
+    </joined-subclass>
+    <joined-subclass name="LegalCustomer" extends="Customer" table="legal_customer">
+        <key column="customer_id"/>
+        <property name="companyName" type="string" column="company_name"></property>
+        <property name="registerDate" type="string" column="register_date"></property>
+        <property name="economicCode" type="string" column="economic_code"></property>
+    </joined-subclass>
+</class>

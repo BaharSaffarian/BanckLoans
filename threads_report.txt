@@ -1,0 +1,317 @@
+http-apr-8080-exec-10@3191 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at sun.misc.Unsafe.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.LockSupport.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source:-1)
+	  at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+	  at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-exec-9@3189 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at sun.misc.Unsafe.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.LockSupport.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source:-1)
+	  at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+	  at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-exec-8@3190 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at sun.misc.Unsafe.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.LockSupport.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source:-1)
+	  at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+	  at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-exec-7@3188 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at sun.misc.Unsafe.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.LockSupport.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source:-1)
+	  at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+	  at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-exec-6@3187 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at sun.misc.Unsafe.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.LockSupport.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source:-1)
+	  at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+	  at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-exec-5@3186 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at sun.misc.Unsafe.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.LockSupport.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source:-1)
+	  at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+	  at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-exec-4@3181 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at sun.misc.Unsafe.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.LockSupport.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source:-1)
+	  at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+	  at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-exec-3@3180 daemon, prio=5, in group 'main', status: 'RUNNING'
+	  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:324)
+	  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	  at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	  at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	  at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	  at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	  at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	  at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	  at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	  at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	  at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	  at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	  at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	  at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2466)
+	  at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2455)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-exec-2@2532 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at sun.misc.Unsafe.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.LockSupport.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source:-1)
+	  at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+	  at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-exec-1@2530 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at sun.misc.Unsafe.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.LockSupport.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source:-1)
+	  at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:104)
+	  at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:32)
+	  at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+ajp-apr-8009-AsyncTimeout@2286 daemon, prio=5, in group 'main', status: 'SLEEPING'
+	  at java.lang.Thread.sleep(Unknown Source:-1)
+	  at org.apache.tomcat.util.net.AprEndpoint$AsyncTimeout.run(AprEndpoint.java:1091)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+ajp-apr-8009-Acceptor-0@2285 daemon, prio=5, in group 'main', status: 'RUNNING'
+	  at org.apache.tomcat.jni.Socket.accept(Socket.java:-1)
+	  at org.apache.tomcat.util.net.AprEndpoint$Acceptor.run(AprEndpoint.java:1017)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+ajp-apr-8009-Poller@2287 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at java.lang.Object.wait(Unknown Source:-1)
+	  at org.apache.tomcat.util.net.AprEndpoint$Poller.run(AprEndpoint.java:1702)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-bio-8443-AsyncTimeout@2288 daemon, prio=5, in group 'main', status: 'SLEEPING'
+	  at java.lang.Thread.sleep(Unknown Source:-1)
+	  at org.apache.tomcat.util.net.JIoEndpoint$AsyncTimeout.run(JIoEndpoint.java:152)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-bio-8443-Acceptor-0@2282 daemon, prio=5, in group 'main', status: 'RUNNING'
+	  at java.net.DualStackPlainSocketImpl.accept0(Unknown Source:-1)
+	  at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source:-1)
+	  at java.net.AbstractPlainSocketImpl.accept(Unknown Source:-1)
+	  at java.net.PlainSocketImpl.accept(Unknown Source:-1)
+	  at java.net.ServerSocket.implAccept(Unknown Source:-1)
+	  at sun.security.ssl.SSLServerSocketImpl.accept(Unknown Source:-1)
+	  at org.apache.tomcat.util.net.jsse.JSSESocketFactory.acceptSocket(JSSESocketFactory.java:233)
+	  at org.apache.tomcat.util.net.JIoEndpoint$Acceptor.run(JIoEndpoint.java:220)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-AsyncTimeout@2277 daemon, prio=5, in group 'main', status: 'SLEEPING'
+	  at java.lang.Thread.sleep(Unknown Source:-1)
+	  at org.apache.tomcat.util.net.AprEndpoint$AsyncTimeout.run(AprEndpoint.java:1091)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-Acceptor-0@2278 daemon, prio=5, in group 'main', status: 'RUNNING'
+	  at org.apache.tomcat.jni.Socket.accept(Socket.java:-1)
+	  at org.apache.tomcat.util.net.AprEndpoint$Acceptor.run(AprEndpoint.java:1017)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-Sendfile@2275 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at java.lang.Object.wait(Unknown Source:-1)
+	  at java.lang.Object.wait(Unknown Source:-1)
+	  at org.apache.tomcat.util.net.AprEndpoint$Sendfile.run(AprEndpoint.java:2213)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+http-apr-8080-Poller@2272 daemon, prio=5, in group 'main', status: 'WAIT'
+	  at java.lang.Object.wait(Unknown Source:-1)
+	  at org.apache.tomcat.util.net.AprEndpoint$Poller.run(AprEndpoint.java:1702)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+ContainerBackgroundProcessor[StandardEngine[Catalina]]@2263 daemon, prio=5, in group 'main', status: 'SLEEPING'
+	  at java.lang.Thread.sleep(Unknown Source:-1)
+	  at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1513)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+GC Daemon@1789 daemon, prio=2, in group 'system', status: 'WAIT'
+	  at java.lang.Object.wait(Unknown Source:-1)
+	  at sun.misc.GC$Daemon.run(Unknown Source:-1)
+
+RMI TCP Connection(4)-127.0.0.1@1569 daemon, prio=5, in group 'RMI Runtime', status: 'RUNNING'
+	  at java.io.ObjectInputStream.defaultReadFields(Unknown Source:-1)
+	  at java.io.ObjectInputStream.readSerialData(Unknown Source:-1)
+	  at java.io.ObjectInputStream.readOrdinaryObject(Unknown Source:-1)
+	  at java.io.ObjectInputStream.readObject0(Unknown Source:-1)
+	  at java.io.ObjectInputStream.defaultReadFields(Unknown Source:-1)
+	  at java.io.ObjectInputStream.readSerialData(Unknown Source:-1)
+	  at java.io.ObjectInputStream.readOrdinaryObject(Unknown Source:-1)
+	  at java.io.ObjectInputStream.readObject0(Unknown Source:-1)
+	  at java.io.ObjectInputStream.readArray(Unknown Source:-1)
+	  at java.io.ObjectInputStream.readObject0(Unknown Source:-1)
+	  at java.io.ObjectInputStream.readObject(Unknown Source:-1)
+	  at sun.rmi.transport.DGCImpl_Skel.dispatch(Unknown Source:-1)
+	  at sun.rmi.server.UnicastServerRef.oldDispatch(Unknown Source:-1)
+	  at sun.rmi.server.UnicastServerRef.dispatch(Unknown Source:-1)
+	  at sun.rmi.transport.Transport$1.run(Unknown Source:-1)
+	  at sun.rmi.transport.Transport$1.run(Unknown Source:-1)
+	  at java.security.AccessController.doPrivileged(Unknown Source:-1)
+	  at sun.rmi.transport.Transport.serviceCall(Unknown Source:-1)
+	  at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source:-1)
+	  at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source:-1)
+	  at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+RMI Scheduler(0)@1563 daemon, prio=5, in group 'system', status: 'WAIT'
+	  at sun.misc.Unsafe.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source:-1)
+	  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source:-1)
+	  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source:-1)
+	  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+RMI TCP Connection(idle)@1511 daemon, prio=5, in group 'RMI Runtime', status: 'WAIT'
+	  at sun.misc.Unsafe.park(Unknown Source:-1)
+	  at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source:-1)
+	  at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source:-1)
+	  at java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source:-1)
+	  at java.util.concurrent.SynchronousQueue.poll(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source:-1)
+	  at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source:-1)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+RMI TCP Connection(idle)@1566 daemon, prio=5, in group 'RMI Runtime', status: 'RUNNING'
+
+RMI TCP Accept-0@1228 daemon, prio=5, in group 'system', status: 'RUNNING'
+	  at java.net.DualStackPlainSocketImpl.accept0(Unknown Source:-1)
+	  at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source:-1)
+	  at java.net.AbstractPlainSocketImpl.accept(Unknown Source:-1)
+	  at java.net.PlainSocketImpl.accept(Unknown Source:-1)
+	  at java.net.ServerSocket.implAccept(Unknown Source:-1)
+	  at java.net.ServerSocket.accept(Unknown Source:-1)
+	  at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(Unknown Source:-1)
+	  at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(Unknown Source:-1)
+	  at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(Unknown Source:-1)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+RMI TCP Accept-1099@1187 daemon, prio=5, in group 'system', status: 'RUNNING'
+	  at java.net.DualStackPlainSocketImpl.accept0(Unknown Source:-1)
+	  at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source:-1)
+	  at java.net.AbstractPlainSocketImpl.accept(Unknown Source:-1)
+	  at java.net.PlainSocketImpl.accept(Unknown Source:-1)
+	  at java.net.ServerSocket.implAccept(Unknown Source:-1)
+	  at java.net.ServerSocket.accept(Unknown Source:-1)
+	  at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(Unknown Source:-1)
+	  at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(Unknown Source:-1)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+RMI TCP Accept-0@1116 daemon, prio=5, in group 'system', status: 'RUNNING'
+	  at java.net.DualStackPlainSocketImpl.accept0(Unknown Source:-1)
+	  at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source:-1)
+	  at java.net.AbstractPlainSocketImpl.accept(Unknown Source:-1)
+	  at java.net.PlainSocketImpl.accept(Unknown Source:-1)
+	  at java.net.ServerSocket.implAccept(Unknown Source:-1)
+	  at java.net.ServerSocket.accept(Unknown Source:-1)
+	  at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(Unknown Source:-1)
+	  at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(Unknown Source:-1)
+	  at java.lang.Thread.run(Unknown Source:-1)
+
+Attach Listener@3220 daemon, prio=5, in group 'system', status: 'RUNNING'
+
+Signal Dispatcher@3221 daemon, prio=9, in group 'system', status: 'RUNNING'
+
+Finalizer@3222 daemon, prio=8, in group 'system', status: 'WAIT'
+	  at java.lang.Object.wait(Unknown Source:-1)
+	  at java.lang.ref.ReferenceQueue.remove(Unknown Source:-1)
+	  at java.lang.ref.ReferenceQueue.remove(Unknown Source:-1)
+	  at java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source:-1)
+
+Reference Handler@3223 daemon, prio=10, in group 'system', status: 'WAIT'
+	  at java.lang.Object.wait(Unknown Source:-1)
+	  at java.lang.Object.wait(Unknown Source:-1)
+	  at java.lang.ref.Reference$ReferenceHandler.run(Unknown Source:-1)
+
+main@1, prio=5, in group 'main', status: 'RUNNING'
+	  at java.net.DualStackPlainSocketImpl.accept0(Unknown Source:-1)
+	  at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source:-1)
+	  at java.net.AbstractPlainSocketImpl.accept(Unknown Source:-1)
+	  at java.net.PlainSocketImpl.accept(Unknown Source:-1)
+	  at java.net.ServerSocket.implAccept(Unknown Source:-1)
+	  at java.net.ServerSocket.accept(Unknown Source:-1)
+	  at org.apache.catalina.core.StandardServer.await(StandardServer.java:453)
+	  at org.apache.catalina.startup.Catalina.await(Catalina.java:777)
+	  at org.apache.catalina.startup.Catalina.start(Catalina.java:723)
+	  at sun.reflect.NativeMethodAccessorImpl.invoke0(Unknown Source:-1)
+	  at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source:-1)
+	  at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source:-1)
+	  at java.lang.reflect.Method.invoke(Unknown Source:-1)
+	  at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:321)
+	  at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+
