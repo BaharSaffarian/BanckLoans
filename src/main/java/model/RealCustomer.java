@@ -36,6 +36,14 @@ public class RealCustomer extends Customer {
         return lastName;
     }
 
+    public void setFatherName(String fatherName) {
+        this.fatherName = fatherName;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
     public String getFatherName() {
         return fatherName;
     }

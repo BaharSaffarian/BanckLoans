@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>مدیریت اطلاعات مشتریان</title>
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="Script.js" type="text/javascript" ></script>
 </head>
 <body dir="rtl">
 <div id="wrapper">
@@ -14,11 +15,11 @@
             </div>
             <div id="menu" dir="rtl">
                 <ul>
-                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="index.jsp">خانه</a></li>
                     <li class="current_page_item"><a href="RealCustomerRegistration.jsp">ثبت مشتری حقیقی</a></li>
-                    <li><a href="LegalCustomerRegistration.html">ثبت مشتری حقوقی</a></li>
-                    <li><a href="RealCustomerSearch.html">جستجوی مشتری حقیقی</a></li>
-                    <li><a href="LegalCustomerSearch.html">جستجوی مشتری حقوقی</a></li>
+                    <li><a href="LegalCustomerRegistration.jsp">ثبت مشتری حقوقی</a></li>
+                    <li><a href="RealCustomerSearch.jsp">جستجوی مشتری حقیقی</a></li>
+                    <li><a href="LegalCustomerSearch.jsp">جستجوی مشتری حقوقی</a></li>
                 </ul>
             </div>
         </div>
@@ -31,46 +32,6 @@
                 <div class="sidebar">
 
                     <h2>ثبت مشتری حقیقی</h2>
-                    <script >
-                        function validateRealCustomerRegistrationForm() {
-                            var status=true;
-                            if(document.getElementById("FirstName").value.length==0){
-                                document.getElementById("NameRequired").style.display="inline";
-                                status=false;
-                            }
-                            if(document.getElementById("LastName").value.length==0){
-                                document.getElementById("LastNameRequired").style.display="inline";
-                                status=false;
-                            }
-                            if(document.getElementById("FatherName").value.length==0){
-                                document.getElementById("FatherNameRequired").style.display="inline";
-                                status=false;
-                            }
-                            if(document.getElementById("DateOfBirth").value.length==0){
-                                document.getElementById("DateOfBirthRequired").style.display="inline";
-                                status=false;
-                            }
-                            if(document.getElementById("NationalCode").value.length==0){
-                                document.getElementById("NationalCodeRequired").style.display="inline";
-                                status=false;
-                            }else if(isNaN(document.getElementById("NationalCode").value)){
-                                document.getElementById("NationalCodeNotValid").style.display="inline";
-                                status=false;
-                            }else{
-                                var nationalCode=document.getElementById("NationalCode").value;
-                                var sum=0;
-                                for(var i=0;i<(nationalCode.length-1);i++){
-                                    sum+=nationalCode[i]*(10-i);
-                                }
-                                if(!((sum%11)==nationalCode[9] || (sum%11)==(11-nationalCode[9]))) {
-                                    document.getElementById("NationalCodeNotValid").style.display = "inline";
-                                    status = false;
-                                }
-                            }
-
-                            return status;
-                        }
-                    </script>
                     <form id="realCustomerRegistrationForm" method="get"action="RealCustomerRegistrarServlet" onsubmit="return validateRealCustomerRegistrationForm();">
                         <div class="inputRow" >
                             <div class="label" >نام:</div>

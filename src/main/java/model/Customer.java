@@ -1,6 +1,6 @@
 package model;
 
-public abstract class Customer {
+public class Customer {
     private String id;
 
     protected Customer(String id) {

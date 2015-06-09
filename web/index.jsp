@@ -14,11 +14,11 @@
             </div>
             <div id="menu" dir="rtl">
                 <ul>
-                    <li class="current_page_item"><a href="index.html">خانه</a></li>
+                    <li class="current_page_item"><a href="index.jsp">خانه</a></li>
                     <li><a href="RealCustomerRegistration.jsp">ثبت مشتری حقیقی</a></li>
-                    <li><a href="LegalCustomerRegistration.html">ثبت مشتری حقوقی</a></li>
-                    <li><a href="RealCustomerSearch.html">جستجوی مشتری حقیقی</a></li>
-                    <li><a href="LegalCustomerSearch.html">جستجوی مشتری حقوقی</a></li>
+                    <li><a href="LegalCustomerRegistration.jsp">ثبت مشتری حقوقی</a></li>
+                    <li><a href="RealCustomerSearch.jsp">جستجوی مشتری حقیقی</a></li>
+                    <li><a href="LegalCustomerSearch.jsp">جستجوی مشتری حقوقی</a></li>
                 </ul>
             </div>
         </div>
@@ -36,16 +36,16 @@
                             <a href="RealCustomerRegistration.jsp" >تعریف مشتری حقیقی</a>
                         </div>
                         <br>
-                        <a href="LegalCustomerRegistration.html">تعریف مشتری حقوقی</a>
+                        <a href="LegalCustomerRegistration.jsp">تعریف مشتری حقوقی</a>
                     </div>
                     <div class="lastIcon">
                         <img src="images/Search_Group-128.png">
                         <br>
                         <div class="link">
-                            <a href="RealCustomerSearch.html">جستجوی مشتری حقیقی</a>
+                            <a href="RealCustomerSearch.jsp">جستجوی مشتری حقیقی</a>
                         </div>
                         <br>
-                        <a href="LegalCustomerSearch.html">جستجوی مشتری حقوقی</a>
+                        <a href="LegalCustomerSearch.jsp">جستجوی مشتری حقوقی</a>
                     </div>
 
                 </div>

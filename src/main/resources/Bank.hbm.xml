@@ -1,20 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
 <class name="Customer" table="customer">
-    <meta attribute="class-description">contains the real customer inf</meta>
     <id name="id" column="id">
-        <generator class="native"></generator>
+        <generator class="native"/>
     </id>
-    <joined-subclass name="RealCustomer" extends="Customer" table="real_customer">
+    <joined-subclass name="RealCustomer" table="real_customer">
         <key column="customer_id"/>
-        <property name="firstName" type="string" column="first_name"></property>
-        <property name="lastName" type="string" column="last_name"></property>
-        <property name="fatherName" type="string" column="father_name"></property>
-        <property name="dateOfBirth" column="birth_date"></property>
-        <property name="nationalCode" type="string" column="national_code"></property>
+        <property name="firstName" type="string" column="first_name"/>
+        <property name="lastName" type="string" column="last_name"/>
+        <property name="fatherName" type="string" column="father_name"/>
+        <property name="dateOfBirth" column="birth_date"/>
+        <property name="nationalCode" type="string" column="national_code"/>
     </joined-subclass>
-    <joined-subclass name="LegalCustomer" extends="Customer" table="legal_customer">
+    <joined-subclass name="LegalCustomer" table="legal_customer">
         <key column="customer_id"/>
-        <property name="companyName" type="string" column="company_name"></property>
-        <property name="registerDate" type="string" column="register_date"></property>
-        <property name="economicCode" type="string" column="economic_code"></property>
+        <property name="companyName" type="string" column="company_name"/>
+        <property name="registerDate" column="register_date"/>
+        <property name="economicCode" type="string" column="economic_code"/>
     </joined-subclass>
 </class>
+</hibernate-mapping>

@@ -29,7 +29,7 @@
       <column name="company_name" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="register_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="economic_code" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <primary-key name="PRIMARY" columns="customer_id,economic_code"/>
+      <primary-key name="PRIMARY" columns="customer_id"/>
       <foreign-key name="FK_legal_customer_customer" columns="customer_id" ref-table="customer" ref-schema="" ref-catalog="bahar_bank_db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="real_customer" schema="" catalog="bahar_bank_db" type="TABLE">
@@ -39,7 +39,7 @@
       <column name="father_name" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="birth_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
       <column name="national_code" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
-      <primary-key name="PRIMARY" columns="customer_id,national_code"/>
+      <primary-key name="PRIMARY" columns="customer_id"/>
       <foreign-key name="FK_real_customer_customer" columns="customer_id" ref-table="customer" ref-schema="" ref-catalog="bahar_bank_db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="actual_customer" schema="" catalog="baharbankdb" type="TABLE">

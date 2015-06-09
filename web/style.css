@@ -323,6 +323,16 @@ a:hover {
     border-radius: 7px;
 }
 
+.fullPage {
+    position: relative;
+    width: 300px;
+    height: 400;
+    margin: 40px auto;
+    padding: 30px 40px 40px 40px;
+    background: #F0F0F0;
+    border-radius: 7px;
+}
+
 .inputRow {
     margin: 0;
     padding: 0;
@@ -440,6 +450,17 @@ a:hover {
 }
 
 .sidebar h2 {
+     height: 30px;
+     padding: 0px 0px 20px 0px;
+     letter-spacing: -.5px;
+     font-size: 1.8em;
+     color: #222222;;
+     text-align: center;
+     border-bottom: 2px solid #B50D0D;
+     margin-bottom: 10px;
+ }
+
+.fullPage h2 {
     height: 30px;
     padding: 0px 0px 20px 0px;
     letter-spacing: -.5px;

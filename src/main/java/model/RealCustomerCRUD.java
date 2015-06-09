@@ -1,9 +1,6 @@
 package model;
 
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
+import org.hibernate.*;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
@@ -28,7 +25,8 @@ public class RealCustomerCRUD {
         RealCustomer realCustomer = null;
         try {
             transaction = session.beginTransaction();
-            realCustomer = (RealCustomer) session.get(RealCustomer.class, nationalCode);
+            Query query = session.createQuery("from RealCustomer rs where rs.nationalCode= :nationalCode").setParameter("nationalCode",nationalCode);
+            realCustomer = (RealCustomer) query.uniqueResult();
             transaction.commit();
         } catch (HibernateException e) {
             if (transaction != null) {
