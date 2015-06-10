@@ -4,6 +4,9 @@ import org.hibernate.*;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class RealCustomerCRUD {
     static SessionFactory sessionFactory;
@@ -25,7 +28,7 @@ public class RealCustomerCRUD {
         RealCustomer realCustomer = null;
         try {
             transaction = session.beginTransaction();
-            Query query = session.createQuery("from RealCustomer rs where rs.nationalCode= :nationalCode").setParameter("nationalCode",nationalCode);
+            Query query = session.createQuery("from RealCustomer rs where rs.nationalCode = :nationalCode").setParameter("nationalCode",nationalCode);
             realCustomer = (RealCustomer) query.uniqueResult();
             transaction.commit();
         } catch (HibernateException e) {
@@ -60,5 +63,51 @@ public class RealCustomerCRUD {
         return customer_id;
     }
 
+    public static List<RealCustomer> selectRealCustomer(RealCustomer realCustomer) {
+        List<RealCustomer> realCustomers = new ArrayList<RealCustomer>();
+        Session session = sessionFactory.openSession();
+        Transaction transaction = null;
+        try {
+            transaction=session.beginTransaction();
+            //Query q = session.createQuery("FROM Customer c,RealCustomer rc WHERE c.id = rc.id  AND rc.id = :id  AND rc.firstName = :firstName  AND rc.lastName = :lastName  AND rc.nationalCode = :nationalCode");
+            String queryStr = "SELECT rc FROM Customer c,RealCustomer rc WHERE c.id = rc.id";
+            if (realCustomer.getId() != null) {
+                queryStr = queryStr + "  AND rc.id = :id";
+            }
+            if (realCustomer.getFirstName() != null) {
+                queryStr = queryStr + "  AND rc.firstName = :firstName";
+            }
+            if (realCustomer.getLastName() != null) {
+                queryStr = queryStr+ " AND rc.lastName = :lastName";
+            }
+            if (realCustomer.getNationalCode() != null) {
+                queryStr = queryStr + " AND rc.nationalCode = :nationalCode";
+            }
+            Query query=session.createQuery(queryStr);
+            //int index = 1;
+            if (realCustomer.getId() != null) {
+                query.setParameter("id", Integer.parseInt(realCustomer.getId()));
+            }
+            if (realCustomer.getFirstName() != null) {
+                query.setParameter("firstName", realCustomer.getFirstName());
+            }
+            if (realCustomer.getLastName() != null) {
+                query.setParameter("lastName", realCustomer.getLastName());
+            }
+            if (realCustomer.getNationalCode() != null) {
+                query.setParameter("nationalCode" , realCustomer.getNationalCode());
+            }
+            realCustomers = query.list();
+            transaction.commit();
+        } catch (HibernateException e) {
+            if (transaction != null) {
+                transaction.rollback();
+                e.printStackTrace();
+            }
+        } finally {
+            session.close();
+        }
+        return realCustomers;
+    }
 
 }

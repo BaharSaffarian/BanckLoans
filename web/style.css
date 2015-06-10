@@ -394,7 +394,7 @@ a:hover {
 }
 
 .table{
-    width: 1100px;
+    width: 755px;
     margin: 40px auto;
     padding-bottom: 5px;
     background: #f4f4f4;
@@ -402,10 +402,16 @@ a:hover {
     text-align: center;
 }
 
+.table p {
+    margin: 0 0px;
+    padding: 0;
+    text-align: center;
+}
+
 .tr{
     margin:5px 5px 5px 5px ;
     padding: 0;
-    width: 790px;
+    width: 745px;
     height: 50px;
     background: #ebebeb;
     font-weight: normal;
@@ -416,7 +422,7 @@ a:hover {
     border-bottom: 2px solid #B50D0D;
     margin:5px 5px 5px 5px;
     padding: 0;
-    width: 790px;
+    width: 745px;
     height: 50px;
     background: #ebebeb;
 }
@@ -429,18 +435,19 @@ a:hover {
 }
 
 .td{
-    width: 90px;
+    width: 95px;
     margin-left: 5px;
     float: right;
-    padding: 5px 5px 5px 5px;
+    padding: 10px 0 0;
 }
 
 .htd{
-    width: 90px;
+    width: 95px;
     margin-left: 5px;
-    color: #B50D0D;;
+    color: #B50D0D;
     float: right;
-    padding: 5px 5px 5px 5px;
+    padding: 10px 0 0;
+    font-size: small;
 }
 
 .error{
@@ -454,7 +461,7 @@ a:hover {
      padding: 0px 0px 20px 0px;
      letter-spacing: -.5px;
      font-size: 1.8em;
-     color: #222222;;
+     color: #222222;
      text-align: center;
      border-bottom: 2px solid #B50D0D;
      margin-bottom: 10px;
@@ -465,7 +472,7 @@ a:hover {
     padding: 0px 0px 20px 0px;
     letter-spacing: -.5px;
     font-size: 1.8em;
-    color: #222222;;
+    color: #222222;
     text-align: center;
     border-bottom: 2px solid #B50D0D;
     margin-bottom: 10px;

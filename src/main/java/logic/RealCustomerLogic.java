@@ -4,6 +4,8 @@ import model.RealCustomer;
 import model.RealCustomerCRUD;
 import org.apache.log4j.Logger;
 
+import java.util.List;
+
 public class RealCustomerLogic {
     final static Logger logger = Logger.getLogger(RealCustomerLogic.class);
 
@@ -15,5 +17,9 @@ public class RealCustomerLogic {
         }
         logger.error("National code exists");
         return -1;
+    }
+
+    public static List<RealCustomer> searchRealCustomer(RealCustomer realCustomer) {
+        return RealCustomerCRUD.selectRealCustomer(realCustomer);
     }
 }
