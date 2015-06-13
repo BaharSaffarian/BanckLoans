@@ -86,7 +86,7 @@ public class RealCustomerCRUD {
             Query query=session.createQuery(queryStr);
             //int index = 1;
             if (realCustomer.getId() != null) {
-                query.setParameter("id", Integer.parseInt(realCustomer.getId()));
+                query.setParameter("id",realCustomer.getId());
             }
             if (realCustomer.getFirstName() != null) {
                 query.setParameter("firstName", realCustomer.getFirstName());
@@ -108,6 +108,60 @@ public class RealCustomerCRUD {
             session.close();
         }
         return realCustomers;
+    }
+
+    public static boolean updateRealCustomer(RealCustomer realCustomer) {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = null;
+        int result=0;
+        try {
+            transaction=session.beginTransaction();
+            Query query=session.createQuery("update RealCustomer rc set rc.firstName = :firstName , " +
+                    "rc.lastName = :lastName , rc.fatherName = :fatherName , rc.dateOfBirth = :birthDate , " +
+                    "rc.nationalCode = :nationalCode where rc.id = :id ");
+            query.setParameter("id", realCustomer.getId());
+            query.setParameter("firstName",realCustomer.getFirstName());
+            query.setParameter("lastName",realCustomer.getLastName());
+            query.setParameter("fatherName",realCustomer.getFatherName());
+            query.setParameter("birthDate",realCustomer.getDateOfBirth());
+            query.setParameter("nationalCode",realCustomer.getNationalCode());
+            result=query.executeUpdate();
+            transaction.commit();
+        } catch (HibernateException e) {
+            if (transaction != null) {
+                transaction.rollback();
+                e.printStackTrace();
+            }
+        } finally {
+            session.close();
+        }
+        if (result > 0)
+            return true;
+        return false;
+
+    }
+
+    public static boolean deleteRealCustomerById(String id) {
+        Session session=sessionFactory.openSession();
+        Transaction transaction=null;
+        int result=0;
+        try {
+            transaction=session.beginTransaction();
+            Query query=session.createQuery("delete RealCustomer rc where rc.id = :id");
+            query.setParameter("id",id);
+            result=query.executeUpdate();
+            transaction.commit();
+        } catch (HibernateException e) {
+            if (transaction != null) {
+                transaction.rollback();
+                e.printStackTrace();
+            }
+        }finally {
+            session.close();
+        }
+        if (result > 0)
+            return true;
+        return false;
     }
 
 }

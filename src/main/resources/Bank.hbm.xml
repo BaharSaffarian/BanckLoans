@@ -23,4 +23,31 @@
         <property name="economicCode" type="string" column="economic_code"/>
     </joined-subclass>
 </class>
+
+    <class name="LoanType" table="loan_type">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="name" type="string" column="name"/>
+        <property name="interestRate" type="int" column="interest_rate"/>
+        <set name="grantConditions" table="grant_condition" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id" not-null="true"></column>
+            </key>
+            <one-to-many class="GrantCondition"/>
+        </set>
+
+    </class>
+
+    <class name="GrantCondition" table="grant_condition">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <many-to-one name="loanType" class="LoanType" fetch="select" column="loan_type_id" not-null="true"/>
+        <property name="name" column="name"/>
+        <property name="minDuration" column="MinTime"/>
+        <property name="maxDuration" column="MaxTime"/>
+        <property name="minAmount" column="MinAmount"/>
+        <property name="maxAmount" column="MaxAmount"/>
+    </class>
 </hibernate-mapping>

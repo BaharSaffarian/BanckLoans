@@ -54,7 +54,7 @@
     </annotationProcessing>
   </component>
   <component name="CopyrightManager" default="" />
-  <component name="DataSourceManagerImpl" format="xml" hash="1134369093">
+  <component name="DataSourceManagerImpl" format="xml" hash="2670747654">
     <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="18d35251-5090-4077-a3d8-d40507e98075">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
@@ -79,10 +79,16 @@
     <file url="file://$PROJECT_DIR$/src/main/java/model/LegalCustomerCRUD.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/model/RealCustomer.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/model/RealCustomerCRUD.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/presentation/LegalCustomerDeleteServlet.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/presentation/LegalCustomerRegistrationServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/presentation/LegalCustomerSearchServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/presentation/LegalCustomerUpdateServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/presentation/RealCustomerDeleteServlet.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/presentation/RealCustomerRegistrarServlet.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/presentation/RealCustomerSearchServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/presentation/RealCustomerUpdateServlet.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/CustomerRegistered.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/LegalCustomerUpdateServlet.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/images" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/style.css" charset="UTF-8" />
   </component>

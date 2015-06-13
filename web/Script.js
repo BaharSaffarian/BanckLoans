@@ -69,47 +69,54 @@ function visible(count) {
     document.getElementById("nationalCodeLabel" + count).style.display = "none";
     document.getElementById("choose" + count).style.display = "none";
 }
-function validateRealCustomer(count) {
+
+function LegalEditVisible(count) {
+    document.getElementById("companyName" + count).style.display = "inline";
+    document.getElementById("registerDate" + count).style.display = "inline";
+    document.getElementById("economicCode" + count).style.display = "inline";
+    document.getElementById("send" + count).style.display = "inline";
+
+    document.getElementById("companyNameLabel" + count).style.display = "none";
+    document.getElementById("registerDateLabel" + count).style.display = "none";
+    document.getElementById("economicCodeLabel" + count).style.display = "none";
+    document.getElementById("choose" + count).style.display = "none";
+}
+
+function loanTypeRegistrationValidate(){
     var status=true;
-    if(document.getElementById("firstName" + count).value.length==0){
-        document.getElementById("firstNameRequired" + count).style.display="inline";
+    if(document.getElementById("TypeName").value.length==0){
+        document.getElementById("TypeNameRequired").style.display="inline";
         status=false;
     }
-    if(document.getElementById("lastName"+ + count).value.length==0){
-        document.getElementById("lastNameRequired" + count).style.display="inline";
+    if(document.getElementById("InterestRate").value.length==0){
+        document.getElementById("InterestRateRequired").style.display="inline";
         status=false;
     }
-    if(document.getElementById("fatherName" + count).value.length==0){
-        document.getElementById("fatherNameRequired" + count).style.display="inline";
+    return status;
+}
+
+function GrantConditionDefinitionValidation(){
+    if(document.getElementById("ConditionName").value.length==0){
+        document.getElementById("ConditionNameRequired").style.display="inline";
         status=false;
     }
-    if(document.getElementById("birthDate" + count).value.length==0){
-        document.getElementById("birthDateRequired" + count).style.display="inline";
+    if(document.getElementById("MinDuration").value.length==0){
+        document.getElementById("MinDurationRequired").style.display="inline";
         status=false;
     }
-    if(document.getElementById("nationalCode" + count).value.length==0){
-        document.getElementById("nationalCodeRequired" + count).style.display="inline";
+    if(document.getElementById("MaxDuration").value.length==0){
+        document.getElementById("MaxDurationRequired").style.display="inline";
         status=false;
-    }else if(isNaN(document.getElementById("nationalCode" + count).value)){
-        document.getElementById("nationalCodeNotValid" + count).style.display="inline";
+    }
+    if(document.getElementById("MinAmount").value.length==0){
+        document.getElementById("MinAmountRequired").style.display="inline";
         status=false;
-    }else{
-        var nationalCode=document.getElementById("nationalCode").value;
-        var sum=0;
-        for(var i=0;i<(nationalCode.length-1);i++){
-            sum+=nationalCode[i]*(10-i);
-        }
-        if(!((sum%11)==nationalCode[9] || (sum%11)==(11-nationalCode[9]))) {
-            document.getElementById("nationalCodeNotValid" + count).style.display = "inline";
-            status = false;
-        }
+    }
+    if(document.getElementById("MaxAmount").value.length==0){
+        document.getElementById("MaxAmountRequired").style.display="inline";
+        status=false;
     }
     return status;
 
 }
-function doDelete(count) {
-    var form = document.getElementById("myform" + count);
-    form.action = 'RealCustomerDeleteServlet';
-    form.submit();
-    form.target = '';
-}
+

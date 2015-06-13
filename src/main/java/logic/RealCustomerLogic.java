@@ -22,4 +22,27 @@ public class RealCustomerLogic {
     public static List<RealCustomer> searchRealCustomer(RealCustomer realCustomer) {
         return RealCustomerCRUD.selectRealCustomer(realCustomer);
     }
+
+    public static int updateCustomer(RealCustomer realCustomer, String oldNationalCode) {
+        if (!realCustomer.getNationalCode().equals(oldNationalCode) && !RealCustomerCRUD.doesNationalCodeExists(realCustomer.getNationalCode())) {
+            if (RealCustomerCRUD.updateRealCustomer(realCustomer)) {
+                logger.info("RealCustomer by id : " + realCustomer.getId() + " is updated with new values");
+                return 1;
+            }
+        } else if (realCustomer.getNationalCode().equals(oldNationalCode)) {
+            if (RealCustomerCRUD.updateRealCustomer(realCustomer)) {
+                logger.info("RealCustomer by id : " + realCustomer.getId() + " is updated with new values");
+                return 1;
+            }
+        }
+        logger.error("National code exists and RealCustomer by id : " + realCustomer.getId() + " could not be updated");
+        return -1;
+    }
+
+    public static boolean deleteRealCustomerById(String id) {
+        boolean result=RealCustomerCRUD.deleteRealCustomerById(id);
+        logger.info("RealCustomer by id : " + id + " is deleted successfully");
+        return result;
+
+    }
 }
