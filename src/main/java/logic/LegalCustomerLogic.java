@@ -2,13 +2,12 @@ package logic;
 
 import model.LegalCustomer;
 import model.LegalCustomerCRUD;
-import model.RealCustomerCRUD;
 import org.apache.log4j.Logger;
 
 import java.util.List;
 
 public class LegalCustomerLogic {
-    final static Logger logger = Logger.getLogger(RealCustomerLogic.class);
+    final static Logger logger = Logger.getLogger(LegalCustomerLogic.class);
     public static int registerCustomer(LegalCustomer legalCustomer){
         if(!LegalCustomerCRUD.doesEconomicCodeExists(legalCustomer.getEconomicCode())){
             return LegalCustomerCRUD.insertLegalCustomer(legalCustomer);

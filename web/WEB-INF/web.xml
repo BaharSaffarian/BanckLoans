@@ -84,4 +84,13 @@
         <servlet-name>GrantConditionsDefinitionServlet</servlet-name>
         <url-pattern>/GranConditionsDefinitionServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoanTypeRegistrationServlet</servlet-name>
+        <servlet-class>presentation.LoanTypeRegistrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoanTypeRegistrationServlet</servlet-name>
+        <url-pattern>/LoanTypeRegistrationServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

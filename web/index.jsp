@@ -1,9 +1,9 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="fa-IR">
 <head>
-    <meta charset="UTF-8">    <title>مدیریت اطلاعات مشتریان</title>
-    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <meta charset="UTF-8">
+    <title>مدیریت اطلاعات مشتریان</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
 </head>
 <body dir="rtl">
 <div id="wrapper">
@@ -26,14 +26,17 @@
     <div id="content">
         <div class="post">
             <h3 class="title"><a href="#">به سامانه ی مدیریت اطلاعات مشتریان خوش آمدید </a></h3>
+
             <div class="entry">
-                <p>لطفا  عملیات مورد نظر را مشخص نمایید: </p>
+                <p>لطفا عملیات مورد نظر را مشخص نمایید: </p>
+
                 <div class="links">
                     <div class="icon">
                         <img src="images/Add_Person-128.png">
                         <br>
+
                         <div class="link">
-                            <a href="RealCustomerRegistration.jsp" >تعریف مشتری حقیقی</a>
+                            <a href="RealCustomerRegistration.jsp">تعریف مشتری حقیقی</a>
                         </div>
                         <br>
                         <a href="LegalCustomerRegistration.jsp">تعریف مشتری حقوقی</a>
@@ -41,11 +44,21 @@
                     <div class="lastIcon">
                         <img src="images/Search_Group-128.png">
                         <br>
+
                         <div class="link">
                             <a href="RealCustomerSearch.jsp">جستجوی مشتری حقیقی</a>
                         </div>
                         <br>
                         <a href="LegalCustomerSearch.jsp">جستجوی مشتری حقوقی</a>
+                    </div>
+                    <div class="icon">
+                        <img src="images/give-money-128.png">
+                        <br>
+
+                        <div class="link">
+                            <a href="LoanTypeRegistration.jsp">تعریف نوع تسهیلات</a>
+                        </div>
+
                     </div>
 
                 </div>
