@@ -88,7 +88,6 @@
     <file url="file://$PROJECT_DIR$/src/main/java/presentation/RealCustomerSearchServlet.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/presentation/RealCustomerUpdateServlet.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/CustomerRegistered.jsp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web/LegalCustomerUpdateServlet.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/images" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/style.css" charset="UTF-8" />
   </component>

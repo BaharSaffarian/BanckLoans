@@ -22,7 +22,8 @@
             Root
         </property>
 
-        <mapping resource="Bank.hbm.xml"/>
-
+        <mapping resource="Customer.hbm.xml"/>
+        <mapping resource="LoanType.hbm.xml"/>
+        <mapping resource="GrantCondition.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

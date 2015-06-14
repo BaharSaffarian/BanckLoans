@@ -96,6 +96,7 @@ function loanTypeRegistrationValidate(){
 }
 
 function GrantConditionDefinitionValidation(){
+    var status=true;
     if(document.getElementById("ConditionName").value.length==0){
         document.getElementById("ConditionNameRequired").style.display="inline";
         status=false;
@@ -117,6 +118,4 @@ function GrantConditionDefinitionValidation(){
         status=false;
     }
     return status;
-
 }
-
