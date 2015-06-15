@@ -54,7 +54,7 @@
     </annotationProcessing>
   </component>
   <component name="CopyrightManager" default="" />
-  <component name="DataSourceManagerImpl" format="xml" hash="2670747654">
+  <component name="DataSourceManagerImpl" format="xml" hash="4086159652">
     <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="18d35251-5090-4077-a3d8-d40507e98075">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>

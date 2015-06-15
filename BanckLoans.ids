@@ -44,12 +44,25 @@
       <primary-key name="PRIMARY" columns="customer_id"/>
       <foreign-key name="FK_legal_customer_customer" columns="customer_id" ref-table="customer" ref-schema="" ref-catalog="bahar_bank_db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
+    <table name="loan_file" schema="" catalog="bahar_bank_db" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="customer_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="loan_type_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="duration" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="amount" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_loan_file_customer_id" columns="customer_id" ref-table="real_customer" ref-schema="" ref-catalog="bahar_bank_db" ref-columns="customer_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_loan_file_loan_type_id" columns="loan_type_id" ref-table="loan_type" ref-schema="" ref-catalog="bahar_bank_db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK_loan_file_customer_id" unique="false" columns="customer_id"/>
+      <index name="FK_loan_file_loan_type_id" unique="false" columns="loan_type_id"/>
+    </table>
     <table name="loan_type" schema="" catalog="bahar_bank_db" type="TABLE">
       <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="name" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <column name="interest_rate" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
       <primary-key name="PRIMARY" columns="id"/>
       <exported-key name="FK_grant_condition_loan_type" table="grant_condition" schema="" catalog="bahar_bank_db" columns="loan_type_id"/>
+      <exported-key name="FK_loan_file_loan_type_id" table="loan_file" schema="" catalog="bahar_bank_db" columns="loan_type_id"/>
     </table>
     <table name="real_customer" schema="" catalog="bahar_bank_db" type="TABLE">
       <column name="customer_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -60,6 +73,7 @@
       <column name="national_code" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
       <primary-key name="PRIMARY" columns="customer_id"/>
       <foreign-key name="FK_real_customer_customer" columns="customer_id" ref-table="customer" ref-schema="" ref-catalog="bahar_bank_db" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_loan_file_customer_id" table="loan_file" schema="" catalog="bahar_bank_db" columns="customer_id"/>
     </table>
     <table name="actual_customer" schema="" catalog="baharbankdb" type="TABLE">
       <column name="customer_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
