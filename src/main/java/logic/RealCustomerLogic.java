@@ -45,4 +45,14 @@ public class RealCustomerLogic {
         return result;
 
     }
+
+    public static RealCustomer searchRealCustomerById(String id){
+        RealCustomer realCustomer=RealCustomerCRUD.selectRealCustomerById(id);
+        if(realCustomer==null){
+            logger.error("Customer by id: "+id+" does not exists");
+        }else {
+            logger.info("Customer is retrieved successfully, firstName: "+realCustomer.getFirstName()+" lastName: "+realCustomer.getLastName());
+        }
+        return  realCustomer;
+    }
 }

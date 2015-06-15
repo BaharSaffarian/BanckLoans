@@ -1,5 +1,6 @@
 package model;
 
+import org.apache.log4j.Logger;
 import org.hibernate.*;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -9,6 +10,7 @@ import java.util.List;
 
 
 public class RealCustomerCRUD {
+    final static Logger logger = Logger.getLogger(RealCustomerCRUD.class);
     static SessionFactory sessionFactory;
     static {
         Configuration cfg = new Configuration().addResource("hibernate.cfg.xml").configure();
@@ -162,6 +164,26 @@ public class RealCustomerCRUD {
         if (result > 0)
             return true;
         return false;
+    }
+
+    public static RealCustomer selectRealCustomerById(String id){
+        Session session=sessionFactory.openSession();
+        Transaction transaction=null;
+        RealCustomer realCustomer=null;
+        try {
+            transaction=session.beginTransaction();
+            realCustomer=(RealCustomer) session.get(RealCustomer.class,id);
+            transaction.commit();
+        }catch (HibernateException e){
+            if(transaction!=null){
+                transaction.rollback();
+                logger.error("transaction is rolled back");
+            }
+            e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return realCustomer;
     }
 
 }

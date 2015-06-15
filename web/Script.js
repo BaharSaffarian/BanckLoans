@@ -202,3 +202,5 @@ function createTableOfGrantConditions(){
     form.appendChild(maxAmount);
 
 }
+
+

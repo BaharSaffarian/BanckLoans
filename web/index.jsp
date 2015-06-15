@@ -58,6 +58,9 @@
                         <div class="link">
                             <a href="LoanTypeRegistration.jsp">تعریف نوع تسهیلات</a>
                         </div>
+                        <div class="link">
+                            <a href="loanFileRegistration.jsp">تشکیل پرونده تسهیلاتی</a>
+                        </div>
 
                     </div>
 

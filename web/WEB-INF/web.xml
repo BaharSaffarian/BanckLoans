@@ -93,4 +93,22 @@
         <servlet-name>LoanTypeRegistrationServlet</servlet-name>
         <url-pattern>/LoanTypeRegistrationServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoanFileSearchCustomerByIdServlet</servlet-name>
+        <servlet-class>presentation.LoanFileSearchCustomerByIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoanFileSearchCustomerByIdServlet</servlet-name>
+        <url-pattern>/LoanFileSearchCustomerByIdServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoanFileRegistrationServlet</servlet-name>
+        <servlet-class>presentation.LoanFileRegistrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoanFileRegistrationServlet</servlet-name>
+        <url-pattern>/LoanFileRegistrationServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
