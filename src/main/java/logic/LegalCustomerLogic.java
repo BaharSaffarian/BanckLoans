@@ -8,24 +8,30 @@ import java.util.List;
 
 public class LegalCustomerLogic {
     final static Logger logger = Logger.getLogger(LegalCustomerLogic.class);
-    public static int registerCustomer(LegalCustomer legalCustomer){
-        if(!LegalCustomerCRUD.doesEconomicCodeExists(legalCustomer.getEconomicCode())){
-            return LegalCustomerCRUD.insertLegalCustomer(legalCustomer);
+
+    public static int registerCustomer(LegalCustomer legalCustomer) {
+        int legalCustomerId = -1;
+        if (!LegalCustomerCRUD.doesEconomicCodeExists(legalCustomer.getEconomicCode())) {
+            legalCustomerId = LegalCustomerCRUD.insertLegalCustomer(legalCustomer);
+            logger.info("Legal customer added successfully with id:" + legalCustomerId);
+        } else {
+            logger.error("Legal customer economic code is duplicated");
         }
-        return -1;
+        return legalCustomerId;
     }
+
     public static List<LegalCustomer> searchLegalCustomer(LegalCustomer legalCustomer) {
         return LegalCustomerCRUD.selectLegalCustomer(legalCustomer);
     }
 
     public static int updateCustomer(LegalCustomer legalCustomer, String oldEconomicCode) {
-        if(!legalCustomer.getEconomicCode().equals(oldEconomicCode) && !LegalCustomerCRUD.doesEconomicCodeExists(legalCustomer.getEconomicCode())){
-            if(LegalCustomerCRUD.updateLegalCustomer(legalCustomer)) {
+        if (!legalCustomer.getEconomicCode().equals(oldEconomicCode) && !LegalCustomerCRUD.doesEconomicCodeExists(legalCustomer.getEconomicCode())) {
+            if (LegalCustomerCRUD.updateLegalCustomer(legalCustomer)) {
                 logger.info("LegalCustomer by id : " + legalCustomer.getId() + " is updated with new values");
                 return 1;
             }
-        }else if(legalCustomer.getEconomicCode().equals(oldEconomicCode)){
-            if(LegalCustomerCRUD.updateLegalCustomer(legalCustomer)) {
+        } else if (legalCustomer.getEconomicCode().equals(oldEconomicCode)) {
+            if (LegalCustomerCRUD.updateLegalCustomer(legalCustomer)) {
                 logger.info("LegalCustomer by id : " + legalCustomer.getId() + " is updated with new values");
                 return 1;
             }
@@ -36,7 +42,7 @@ public class LegalCustomerLogic {
     }
 
     public static boolean deleteLegalCustomerById(String id) {
-        boolean result= LegalCustomerCRUD.deleteLegalCustomerById(id);
+        boolean result = LegalCustomerCRUD.deleteLegalCustomerById(id);
         logger.info("LegalCustomer by id : " + id + " is deleted successfully");
         return result;
 

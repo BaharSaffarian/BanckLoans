@@ -20,11 +20,11 @@ public class RealCustomerRegistrarServlet extends HttpServlet {
                 request.getParameter("FatherName"), request.getParameter("DateOfBirth"),
                 request.getParameter("NationalCode"));
         int customerId = RealCustomerLogic.insertCustomer(realCustomer);
-        request.setAttribute("CustomerId",customerId);
+        request.setAttribute("CustomerId", customerId);
         if (customerId != -1) {
-            request.getRequestDispatcher("CustomerRegistered.jsp").forward(request,response);
+            request.getRequestDispatcher("CustomerRegistered.jsp").forward(request, response);
         } else {
-            request.getRequestDispatcher("RealCustomerRegistration.jsp").forward(request,response);
+            request.getRequestDispatcher("RealCustomerRegistration.jsp").forward(request, response);
         }
 
 

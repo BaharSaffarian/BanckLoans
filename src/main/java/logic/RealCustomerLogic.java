@@ -11,7 +11,7 @@ public class RealCustomerLogic {
 
     public static int insertCustomer(RealCustomer realCustomer) {
         if (!RealCustomerCRUD.doesNationalCodeExists(realCustomer.getNationalCode())) {
-            int result=RealCustomerCRUD.insertRealCustomer(realCustomer);
+            int result = RealCustomerCRUD.insertRealCustomer(realCustomer);
             logger.info("National code has been verified and the real customer is added");
             return result;
         }
@@ -40,19 +40,19 @@ public class RealCustomerLogic {
     }
 
     public static boolean deleteRealCustomerById(String id) {
-        boolean result=RealCustomerCRUD.deleteRealCustomerById(id);
+        boolean result = RealCustomerCRUD.deleteRealCustomerById(id);
         logger.info("RealCustomer by id : " + id + " is deleted successfully");
         return result;
 
     }
 
-    public static RealCustomer searchRealCustomerById(String id){
-        RealCustomer realCustomer=RealCustomerCRUD.selectRealCustomerById(id);
-        if(realCustomer==null){
-            logger.error("Customer by id: "+id+" does not exists");
-        }else {
-            logger.info("Customer is retrieved successfully, firstName: "+realCustomer.getFirstName()+" lastName: "+realCustomer.getLastName());
+    public static RealCustomer searchRealCustomerById(String id) {
+        RealCustomer realCustomer = RealCustomerCRUD.selectRealCustomerById(id);
+        if (realCustomer == null) {
+            logger.error("Customer by id: " + id + " does not exists");
+        } else {
+            logger.info("Customer is retrieved successfully, firstName: " + realCustomer.getFirstName() + " lastName: " + realCustomer.getLastName());
         }
-        return  realCustomer;
+        return realCustomer;
     }
 }
