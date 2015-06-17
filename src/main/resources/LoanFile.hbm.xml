@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+
+    <class name="LoanFile" table="loan_file">
+        <id name="id" column="id">
+            <generator class="identity"/>
+        </id>
+
+        <property name="customerId" column="customer_id"/>
+        <property name="loanTypeId" column="loan_type_id"/>
+        <property name="duration" column="duration"/>
+        <property name="amount" column="amount"/>
+
+    </class>
+
+</hibernate-mapping>
